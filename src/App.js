@@ -1,25 +1,37 @@
-import logo from './logo.svg';
-import './App.css';
+import { useState } from "react";
+import Wallet from "./components/Wallet/Wallet.js";
+import Leaderboard from "./components/leaderboard/Leaderboard.js"
+import Vote from "./components/Vote/Vote.js"
 
-function App() {
-  return (
-    <div className="App">
-      <header className="App-header">
-        <img src={logo} className="App-logo" alt="logo" />
-        <p>
-          Edit <code>src/App.js</code> and save to reload.
-        </p>
-        <a
-          className="App-link"
-          href="https://reactjs.org"
-          target="_blank"
-          rel="noopener noreferrer"
-        >
-          Learn React
-        </a>
-      </header>
-    </div>
+function App(){
+  const [state, setState]=useState({
+    web: null,
+    contract: null,
+    accounts: null
+  })
+  const saveState=(state)=>{
+    console.log(state);
+    setState(state);
+  }
+
+  // const [account,setAccount]=useState({
+  //   currentAccount: null
+  // })
+
+  // const saveAccount=(account)=>{
+  //   setAccount(account);
+  // }
+
+  return(
+    <>
+    <div className="main">
+      <Wallet saveState={saveState}></Wallet>
+      <Leaderboard state={state} />
+      </div>
+    </>
   );
 }
+
+
 
 export default App;

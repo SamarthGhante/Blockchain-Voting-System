@@ -1,0 +1,157 @@
+/* .table-outer {
+    display: flex;
+    justify-content: center;
+    background-color: black;
+}
+
+table {
+    border-collapse: collapse;
+    width: fit-content;
+    border: 2px solid rgb(86, 88, 226);
+
+}
+
+th {
+    position: sticky;
+    top: 0px;
+    background-color: black;
+    color: white;
+    padding: 12px 16px;
+    text-align: center;
+    border-right: 1px solid white; 
+}
+
+th:last-child {
+    border-right: none; 
+}
+
+.table-wrapper {
+    margin-top: 20px;
+    margin-bottom: 20px;
+    max-height: 500px;
+    overflow-y: scroll;
+}
+
+td {
+    text-align: center;
+    vertical-align: middle;
+    padding: 8px 16px;
+    color: white;
+}
+
+tbody tr {
+    border-top: 1px solid #ddd; 
+}  */
+
+/* .custom-table tbody tr:nth-child(even) {
+    background-color: #f2f2f2;
+}
+
+
+/* ---------------------------------- */
+
+
+
+.body {
+    min-height: 80vh;
+    width: 100vw;
+    background: url(C:\Users\A\Desktop\GFG\Application\voting-dapp\src\assets\contract\images\3676171.jpg);
+    /*background-color: black;*/
+    background-size: cover;
+    background-repeat: no-repeat;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    overflow-x: hidden;
+}
+
+table, td, th{
+    padding: 1rem;
+
+}
+
+.table {
+    width: 82vw !important; 
+    height: 70vh;
+    background-color: #fff5;
+    backdrop-filter: blur(7px);
+    box-shadow: 0 .4rem .8rem rgba(234, 226, 226, 0.948);
+    border-radius: .6rem;
+
+}
+
+.table_header{
+    width: 100%;
+    height: 11%;
+    /*background-color: rgb(233, 231, 231);*/
+    background-color: #fff4;
+    color: black;
+    padding: .35rem 1rem;
+    border-top-left-radius: .6rem;
+    border-top-right-radius: .6rem;
+}
+
+.table_body{
+    width: 95%;
+    max-height: calc(89% - 1.6rem);
+    background-color: #fffb;
+
+    margin: .8rem auto;
+    border-radius: .6rem;
+
+    overflow: auto;
+    overflow: overlay;
+}
+
+.table_body::-webkit-scrollbar{
+    width: 0.5rem;
+    height: 0.5rem;
+}
+
+.table_body::-webkit-scrollbar-thumb{
+    border-radius: .5rem;
+    background-color: #22092C;
+    visibility: hidden;
+}
+
+.table_body:hover::-webkit-scrollbar-thumb{ 
+    visibility: visible;
+}
+
+
+table {
+    width: 100%;
+}
+
+table, th, td {
+    border-collapse: collapse;
+    padding: 1rem;
+    text-align: left;
+}
+
+thead th {
+    position: sticky;
+    top: 0;
+    left: 0;
+    background-color: #fbfbfbfe;
+    color: rgb(0, 0, 0);
+    cursor: pointer;
+    text-transform: capitalize;
+}
+
+tbody tr:nth-child(even) {
+    background-color: #0000000b;
+}
+
+tbody tr:hover {
+    background-color: #fff6 !important;
+}
+
+
+@media (max-width: 1000px) {
+    td:not(:first-of-type) {
+        min-width: 12.1rem;
+    }
+}
+
+

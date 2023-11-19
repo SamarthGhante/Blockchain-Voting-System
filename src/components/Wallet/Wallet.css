@@ -1,0 +1,26 @@
+.header {
+    width: 100vw;
+    height: 60px;
+    background-color: var(--color-blue);
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding-right: 20px; /* Adjust padding values accordingly */
+    padding-left: 20px; /* Adjust padding values accordingly */
+    box-sizing: border-box; /* Include padding and border in the element's total width */
+    overflow-x: hidden;
+}
+
+.connectStatus {
+    font-size: 14px;
+    font-weight: 600;
+    color: white;
+    border: 2px solid rgb(86, 88, 226);
+    padding: 8px 16px;
+    border-radius: 20px 0 20px 0px ; /* border-radius: 20px; */
+    background-color: black;
+    margin: -2px;
+    margin-left: 20px;
+    box-sizing: border-box; /* Include padding and border in the element's total width */
+}
+
