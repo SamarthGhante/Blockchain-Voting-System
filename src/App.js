@@ -1,7 +1,7 @@
 import { useState } from "react";
 import Wallet from "./components/Wallet/Wallet.js";
-import Leaderboard from "./components/leaderboard/Leaderboard.js"
-import Vote from "./components/Vote/Vote.js"
+import Leaderboard from "./components/leaderboard/Leaderboard.js";
+import Footer from "./components/footer/Footer.js";
 
 function App(){
   const [state, setState]=useState({
@@ -14,19 +14,13 @@ function App(){
     setState(state);
   }
 
-  // const [account,setAccount]=useState({
-  //   currentAccount: null
-  // })
-
-  // const saveAccount=(account)=>{
-  //   setAccount(account);
-  // }
 
   return(
     <>
     <div className="main">
       <Wallet saveState={saveState}></Wallet>
       <Leaderboard state={state} />
+      <Footer></Footer>
       </div>
     </>
   );

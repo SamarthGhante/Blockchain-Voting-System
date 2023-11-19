@@ -1,13 +1,11 @@
-import Web3 from "web3";
-import { useState, useEffect } from "react";
+import { useState } from "react";
 import './Vote.css'; // Import your CSS file
-import 'bootstrap/dist/css/bootstrap.min.css';
 
 
 const Vote = ({ candidates, state }) => {
     const [selectedCandidate, setSelectedCandidate] = useState('');
     const [voted, setVoted] = useState('');
-    const { web3 } = state;
+
 
     function openPopup() {
         const popup = document.querySelector('.popup');
@@ -53,7 +51,7 @@ const Vote = ({ candidates, state }) => {
         VoteStatus && console.log(VoteStatus)
         setVoted(VoteStatus);
         if (VoteStatus === true) {
-            console.log("Already Voted!!");
+           // console.log("Already Voted!!");
             const popuph2 = document.querySelector('.popup-h2');
             const popupP = document.querySelector('.popup-p');
             const popupimg = document.querySelector('.img-popup');
@@ -124,9 +122,6 @@ const Vote = ({ candidates, state }) => {
 
 
         </>
-
-
-
     );
 }
 

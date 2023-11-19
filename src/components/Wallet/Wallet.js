@@ -14,15 +14,17 @@ const Wallet = ({ saveState }) => {
         const connectWallet = async () => {
             try {
                 const { ethereum } = window;
-                window.ethereum.on("chainChanged", () => {
-                    window.location.reload();
-                });
-
-                window.ethereum.on("accountsChanged", () => {
-                    window.location.reload();
-                });
 
                 if (ethereum) {
+                    
+                    window.ethereum.on("chainChanged", () => {
+                        window.location.reload();
+                    });
+
+                    window.ethereum.on("accountsChanged", () => {
+                        window.location.reload();
+                    });
+
                     const ABI = ContractJSON.abi;
                     const web3 = new Web3(window.ethereum);
                     await window.ethereum.request({ method: 'eth_requestAccounts' });
@@ -36,7 +38,7 @@ const Wallet = ({ saveState }) => {
                     saveState({ web3: web3, contract: contract, accounts: accounts });
 
                 } else {
-                    alert("Please Install Metamask");
+                    alert("Please Install Metamask To Interact With This Application!");
                 }
 
             } catch (error) {

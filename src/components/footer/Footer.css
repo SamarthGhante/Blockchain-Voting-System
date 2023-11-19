@@ -1,0 +1,20 @@
+.footer {
+    width: 100vw;
+    height: 20px;
+    background-color: var(--color-blue);
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    padding-right: 20px; /* Adjust padding values accordingly */
+    padding-left: 20px; /* Adjust padding values accordingly */
+    box-sizing: border-box;
+    overflow-x: hidden;
+}
+
+.made-with-love {
+    font-weight: bold;
+}
+
+.team-name{
+    color: rgb(220, 220, 220)
+}
