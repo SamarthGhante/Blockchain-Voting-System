@@ -1,0 +1,29 @@
+1_contractVoting.js
+===================
+
+   Replacing 'contractVoting'
+   --------------------------
+   > transaction hash:    0xeb4843cbe738548d745fdad125ef6a75f8a78bb68427ba9ea635697de726623c
+   > Blocks: 9            Seconds: 21
+   > contract address:    0x52Ee3604bd80dcF50eD81C7E9467c28E15b2b3c9
+   > block number:        42578480
+   > block timestamp:     1700374522
+   > account:             0x6F37A129C3fa9a244177F970427b4Ef4a767252c
+   > balance:             0.192910872457591235
+   > gas used:            1093678 (0x10b02e)
+   > gas price:           2.500000015 gwei
+   > value sent:          0 ETH
+   > total cost:          0.00273419501640517 ETH
+
+   Pausing for 2 confirmations...
+
+   -------------------------------
+   > confirmation number: 3 (block: 42578484)
+   > Saving artifacts
+   -------------------------------------
+   > Total cost:     0.00273419501640517 ETH
+
+Summary
+=======
+> Total deployments:   1
+> Final cost:          0.00273419501640517 ETH

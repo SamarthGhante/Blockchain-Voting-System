@@ -91,9 +91,7 @@ select option {
 .img-popup {
     width: 80px;
     height: 80px;
-    /* Set the image using the background-image property */
     background-image: url('popup.png');
-    /* Additional background properties for positioning, repeat, etc. */
     background-size: cover;
     background-position: center;
     margin-top: -50px;
