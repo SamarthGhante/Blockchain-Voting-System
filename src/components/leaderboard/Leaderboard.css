@@ -55,7 +55,7 @@ tbody tr {
 .body {
     min-height: 80vh;
     width: 100vw;
-    background: url(C:\Users\A\Desktop\GFG\Application\voting-dapp\src\assets\contract\images\3676171.jpg);
+    background: url("hero-img.jpg");
     /*background-color: black;*/
     background-size: cover;
     background-repeat: no-repeat;
