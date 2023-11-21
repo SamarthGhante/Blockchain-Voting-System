@@ -10,7 +10,7 @@ Starting migrations...
 ======================
 > Network name:    'polygon'
 > Network id:      80001
-> Block gas limit: 20039079 (0x131c5a7)
+> Block gas limit: 20533955 (0x13952c3)
 
 
 1_nvotingContract.js
@@ -18,27 +18,27 @@ Starting migrations...
 
    Deploying 'nvotingContract'
    ---------------------------
-   > transaction hash:    0x5f559f3ab3df21d385f7fd6b648b08e99544fdbf2552f281e12d26a28f17eebc
-   > Blocks: 2            Seconds: 4
-   > contract address:    0xAE4fF5F18d6A663e02De47Cf29a997421d749F0E
-   > block number:        42678966
-   > block timestamp:     1700593556
+   > transaction hash:    0x840f7247a5610a909f023454f5f064dadda6809fdbcf94e174a7383e69b7d3bd
+   > Blocks: 4            Seconds: 8
+   > contract address:    0x7Bfe7c35B0e628A0308B5308b220a0d8a455fD3B
+   > block number:        42680585
+   > block timestamp:     1700597284
    > account:             0x6F37A129C3fa9a244177F970427b4Ef4a767252c
-   > balance:             0.181736817390291835
-   > gas used:            1206218 (0x1267ca)
-   > gas price:           2.500000015 gwei
+   > balance:             0.177232452361817048
+   > gas used:            1059428 (0x102a64)
+   > gas price:           2.500000016 gwei
    > value sent:          0 ETH
-   > total cost:          0.00301554501809327 ETH
+   > total cost:          0.002648570016950848 ETH
 
    Pausing for 2 confirmations...
 
    -------------------------------
-   > confirmation number: 2 (block: 42678969)
+   > confirmation number: 2 (block: 42680588)
    > Saving artifacts
    -------------------------------------
-   > Total cost:     0.00301554501809327 ETH
+   > Total cost:     0.002648570016950848 ETH
 
 Summary
 =======
 > Total deployments:   1
-> Final cost:          0.00301554501809327 ETH
+> Final cost:          0.002648570016950848 ETH
