@@ -1,0 +1,16 @@
+.admin-note {
+    width: 100vw;
+    height: 20px;
+    background-color: red;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    padding-right: 20px; /* Adjust padding values accordingly */
+    padding-left: 20px; /* Adjust padding values accordingly */
+    box-sizing: border-box;
+    overflow-x: hidden;
+}
+
+.admin-welcome {
+    font-weight: bold;
+}

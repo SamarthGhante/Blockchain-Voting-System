@@ -1,42 +1,21 @@
 import Web3 from "web3";
 import { useState, useEffect } from "react";
-import './Leaderboard.css'; // Import your CSS file
+import './Leaderboard.css'; 
 import Vote from "../Vote/Vote.js";
+import CandidatesData from "../candidates/Candidatesdata.js";
 
-const Leaderboard = ({ state }) => {
+const Leaderboard = () => {
+
     const [candidates, setCandidates] = useState([]);
-    const [selectedCandidate, setSelectedCandidate] = useState('');
 
-    useEffect(() => {
-        const fetchData = async () => {
-            const { contract } = state;
-
-            if (!contract) {
-                return;
-            }
-
-            const totalCandidates = await contract.methods.candidatesCount().call();
-            console.log(totalCandidates);
-            //tableElement.style.display = 'block';
-
-            const candidatesData = [];
-            for (let i = 1; i <= totalCandidates; i++) {
-                const candidate = await contract.methods.candidates(i).call();
-                candidate && candidatesData.push({
-                    id: candidate[0],
-                    name: candidate[1],
-                    voteCount: candidate[2],
-                });
-            }
-            //console.log(candidatesData);
-            setCandidates(candidatesData);
-        }
-        fetchData();
-    }, [state]);
-
+    const saveCandidates= (arr) => {
+        setCandidates(arr);
+    }
 
     return (
         <>
+        <CandidatesData saveCandidates={saveCandidates}/>
+        
             <div className="body">
                 <div className="table">
                     <div className="table_header">
@@ -64,7 +43,7 @@ const Leaderboard = ({ state }) => {
                     </div>
                 </div>
             </div>
-            <Vote candidates = {candidates} state={state}/>
+            {/* <Vote candidates = {candidates} state={state}/> */}
         </>
     );
 };

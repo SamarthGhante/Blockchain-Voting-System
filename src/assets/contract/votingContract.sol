@@ -1,7 +1,7 @@
 // SPDX-License-Identifier: UNLICENCED
 pragma solidity >=0.4.22 <0.9.0;
 
-contract contractVoting {
+contract nvotingContract {
     
     struct Candidate {
         uint id;
@@ -12,25 +12,25 @@ contract contractVoting {
     mapping(address => bool) public voters;
 
     mapping(uint => Candidate) public candidates;
+    Candidate[] public candidateArray; 
     uint public candidatesCount;
 
     event votedEvent (
         uint indexed _candidateId
     );
 
-    constructor () public {
+    address public owner;
+    constructor () {
+        owner = msg.sender;
         addCandidate("Samarth Ghante");
         addCandidate("Kanishk Kumar");
-        addCandidate("Shravya Bhandary");
-        addCandidate("Gaurang Chavan");
-        addCandidate("Sandeep Nailwal");
-        addCandidate("Elon Musk");
-        addCandidate("Bill Gates");
     }
 
-    function addCandidate (string memory _name) public {
-        candidatesCount ++;
+    function addCandidate(string memory _name) public {
+        require(msg.sender == owner);
+        candidatesCount++;
         candidates[candidatesCount] = Candidate(candidatesCount, _name, 0);
+        candidateArray.push(Candidate(candidatesCount, _name, 0)); 
     }
 
     function vote (uint _candidateId) public {
@@ -41,12 +41,7 @@ contract contractVoting {
         emit votedEvent(_candidateId);
     }
 
-    function getCandidateById(uint _candidateId) public view returns (uint, string memory, uint) {
-        require(_candidateId > 0 && _candidateId <= candidatesCount);
-        return (
-            candidates[_candidateId].id,
-            candidates[_candidateId].name,
-            candidates[_candidateId].voteCount
-        );
+    function getCandidates() public view returns (Candidate[] memory) {
+        return candidateArray;
     }
 }

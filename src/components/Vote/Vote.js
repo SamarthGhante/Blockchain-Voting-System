@@ -1,10 +1,20 @@
 import { useState } from "react";
+import CandidatesData from "../candidates/Candidatesdata";
 import './Vote.css'; // Import your CSS file
 
 
-const Vote = ({ candidates, state }) => {
+const Vote = ({ state }) => {
+
+    const [candidates, setCandidates] = useState([]);
+
+    const saveCandidates= (arr) => {
+        setCandidates(arr);
+    }
+
+
     const [selectedCandidate, setSelectedCandidate] = useState('');
     const [voted, setVoted] = useState('');
+
 
 
     function openPopup() {
@@ -95,6 +105,7 @@ const Vote = ({ candidates, state }) => {
 
     return (
         <>
+        <CandidatesData saveCandidates={saveCandidates}/>
             <div className="body11">
                 <select
                     id="candidatesDropdown"
@@ -116,7 +127,6 @@ const Vote = ({ candidates, state }) => {
                         <p className="popup-p">Your Transaction is in progress!</p>
                         <button type="submit" class="btn" onClick={closePopup}>Close</button>
                     </div>
-
                 </div>
             </div>
 

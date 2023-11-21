@@ -1,0 +1,40 @@
+/* Add these styles for the input and button */
+.custom-input {
+    width: 250px;
+    padding: 12px;
+    border: 2px solid #eb1010;
+    border-radius: 5px;
+    font-size: 16px;
+    margin-right: 10px;
+    /* Additional aesthetic styles can be applied */
+}
+
+.custom-button {
+    padding: 12px 24px;
+    border: none;
+    border-radius: 5px;
+    font-size: 16px;
+    cursor: pointer;
+    background-color: #007bff;
+    color: #fff;
+    /* Additional aesthetic styles can be applied */
+}
+
+/* Styles for the container */
+.input-button-container {
+    color: white;
+    display: flex;
+    background-color: black;
+    align-items:start;
+    justify-content: center;
+}
+
+.text_btn{
+    margin-top: 20px;
+    margin-bottom: 20px;
+}
+
+
+.h3{
+    margin-bottom: 10px;
+}

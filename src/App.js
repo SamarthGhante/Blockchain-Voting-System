@@ -1,27 +1,21 @@
 import { useState } from "react";
-import Wallet from "./components/Wallet/Wallet.js";
-import Leaderboard from "./components/leaderboard/Leaderboard.js";
-import Footer from "./components/footer/Footer.js";
+import { createBrowserRouter, RouterProvider } from 'react-router-dom';
+import Home from "./Home.js";
+import Admin from "./components/admin/Admin.js";
+import Wallet from './components/Wallet/Wallet.js';
 
-function App(){
-  const [state, setState]=useState({
-    web: null,
-    contract: null,
-    accounts: null
-  })
-  const saveState=(state)=>{
-    console.log(state);
-    setState(state);
-  }
+function App({ }) {
+
+  const router = createBrowserRouter([
+    { path: '/', element: <Home /> },
+    { path: '/admin', element: <Admin/> },
+
+  ])
 
 
-  return(
+  return (
     <>
-    <div className="main">
-      <Wallet saveState={saveState}></Wallet>
-      <Leaderboard state={state} />
-      <Footer></Footer>
-      </div>
+      <RouterProvider router={router} />
     </>
   );
 }

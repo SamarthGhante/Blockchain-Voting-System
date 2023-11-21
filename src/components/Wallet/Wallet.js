@@ -1,14 +1,13 @@
 import Web3 from "web3";
 import { useState, useEffect } from "react";
 import ContractJSON from "./Contract.json"
-import './Wallet.css';
 
 
-const Wallet = ({ saveState }) => {
-    const [account, setAccount] = useState({
-        account: null
-    });
-    const [connected, setConnected] = useState(false);
+const Wallet = ({ saveState, saveAccount, saveConnected}) => {
+    // const [account, setAccount] = useState({
+    //     account: null
+    // });
+    //const [connected, setConnected] = useState(false);
     useEffect(() => {
 
         const connectWallet = async () => {
@@ -16,7 +15,7 @@ const Wallet = ({ saveState }) => {
                 const { ethereum } = window;
 
                 if (ethereum) {
-                    
+
                     window.ethereum.on("chainChanged", () => {
                         window.location.reload();
                     });
@@ -30,12 +29,12 @@ const Wallet = ({ saveState }) => {
                     await window.ethereum.request({ method: 'eth_requestAccounts' });
                     const contract = new web3.eth.Contract(
                         ABI,
-                        "0x52Ee3604bd80dcF50eD81C7E9467c28E15b2b3c9"
+                        "0xAE4fF5F18d6A663e02De47Cf29a997421d749F0E"
                     );
                     const accounts = await web3.eth.getAccounts();
-                    setAccount(accounts);
-                    setConnected(true);
-                    saveState({ web3: web3, contract: contract, accounts: accounts });
+                    saveAccount && saveAccount(accounts);
+                    saveConnected && saveConnected(true);
+                    saveState && saveState({ web3: web3, contract: contract, accounts: accounts });
 
                 } else {
                     alert("Please Install Metamask To Interact With This Application!");
@@ -53,21 +52,8 @@ const Wallet = ({ saveState }) => {
     // Empty dependency array ensures it runs only once
     return (
         <>
-            <div className="header">
-                {connected ? (
-                    <h3 className="connectStatus">Connected Account = {account[0]}</h3>
-                ) : (
-                    <h3 className="connectStatus">Please connect your account!</h3>
-                )}
-                <button className="connectStatus" style={{ display: 'none' }}>Click Me</button>
-            </div>
-
         </>
     )
-
-
-
-    // ...rest of your component code
 };
 
 export default Wallet;

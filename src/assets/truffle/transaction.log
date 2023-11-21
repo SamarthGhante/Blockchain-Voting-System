@@ -1,29 +1,44 @@
-1_contractVoting.js
-===================
+Compiling your contracts...
+===========================
+> Compiling .\contracts\nvotingContract.sol
+> Artifacts written to C:\Users\A\Desktop\GFG\SmartContract\build\contracts
+> Compiled successfully using:
+   - solc: 0.8.17+commit.8df45f5f.Emscripten.clang
 
-   Replacing 'contractVoting'
-   --------------------------
-   > transaction hash:    0xeb4843cbe738548d745fdad125ef6a75f8a78bb68427ba9ea635697de726623c
-   > Blocks: 9            Seconds: 21
-   > contract address:    0x52Ee3604bd80dcF50eD81C7E9467c28E15b2b3c9
-   > block number:        42578480
-   > block timestamp:     1700374522
+
+Starting migrations...
+======================
+> Network name:    'polygon'
+> Network id:      80001
+> Block gas limit: 20039079 (0x131c5a7)
+
+
+1_nvotingContract.js
+====================
+
+   Deploying 'nvotingContract'
+   ---------------------------
+   > transaction hash:    0x5f559f3ab3df21d385f7fd6b648b08e99544fdbf2552f281e12d26a28f17eebc
+   > Blocks: 2            Seconds: 4
+   > contract address:    0xAE4fF5F18d6A663e02De47Cf29a997421d749F0E
+   > block number:        42678966
+   > block timestamp:     1700593556
    > account:             0x6F37A129C3fa9a244177F970427b4Ef4a767252c
-   > balance:             0.192910872457591235
-   > gas used:            1093678 (0x10b02e)
+   > balance:             0.181736817390291835
+   > gas used:            1206218 (0x1267ca)
    > gas price:           2.500000015 gwei
    > value sent:          0 ETH
-   > total cost:          0.00273419501640517 ETH
+   > total cost:          0.00301554501809327 ETH
 
    Pausing for 2 confirmations...
 
    -------------------------------
-   > confirmation number: 3 (block: 42578484)
+   > confirmation number: 2 (block: 42678969)
    > Saving artifacts
    -------------------------------------
-   > Total cost:     0.00273419501640517 ETH
+   > Total cost:     0.00301554501809327 ETH
 
 Summary
 =======
 > Total deployments:   1
-> Final cost:          0.00273419501640517 ETH
+> Final cost:          0.00301554501809327 ETH
