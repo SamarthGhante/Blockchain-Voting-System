@@ -1,70 +1,56 @@
-# Getting Started with Create React App
+Blockchain-Voting-System
+=======
+<img width="1000" alt="image" src="https://github.com/SamarthGhante/Blockchain-Voting-System/assets/144468120/fa05aacb-7e88-41ae-8056-622a599e6487">
 
-This project was bootstrapped with [Create React App](https://github.com/facebook/create-react-app).
 
-## Available Scripts
+### Demo👀👀
 
-In the project directory, you can run:
+https://github.com/SamarthGhante/Blockchain-Voting-System/assets/133847514/77e79509-0582-45b9-8add-2cc6e7231cef
 
-### `npm start`
+<div align="center" >
 
-Runs the app in the development mode.\
-Open [http://localhost:3000](http://localhost:3000) to view it in your browser.
+ <strong>Try out our Voting Dap:  <a href="https://votingdapp-chainsquadron.vercel.app/">Click Here</a>!</strong>
 
-The page will reload when you make changes.\
-You may also see any lint errors in the console.
 
-### `npm test`
+ 
+</div>
 
-Launches the test runner in the interactive watch mode.\
-See the section about [running tests](https://facebook.github.io/create-react-app/docs/running-tests) for more information.
+## Overview💜
+The Block Chain Based Voting system is a project brought by Chain-Squadron, In this we used solidty to form a smart contract
+ and hosted it using polygon testnet.Then we used React along with Java Script to connect the contract to frontend.
+The working is as follows:
+<img width="1000" alt="image" src="https://github.com/SamarthGhante/Blockchain-Voting-System/assets/144468120/c7f191e1-5103-4afc-8425-3b4a6d7d1508">
 
-### `npm run build`
 
-Builds the app for production to the `build` folder.\
-It correctly bundles React in production mode and optimizes the build for the best performance.
+## Usage Requirements🤖
+1. Install `Metamask` Wallet (Connects You To Web3 World)!
+2. Add Polygon Mumbai Testnet <a href="https://www.alchemy.com/overviews/mumbai-testnet">(Read Here)</a></strong>
+3. Get Some Free Testnet Tokens From <a href="https://mumbaifaucet.com/">Here</a></strong>☂️
+<p>All Set! Welcome To Decentralized World of Web3🤩</p>
 
-The build is minified and the filenames include the hashes.\
-Your app is ready to be deployed!
 
-See the section about [deployment](https://facebook.github.io/create-react-app/docs/deployment) for more information.
 
-### `npm run eject`
 
-**Note: this is a one-way operation. Once you `eject`, you can't go back!**
+## Running VotingDapp Locally👨‍💻
 
-If you aren't satisfied with the build tool and configuration choices, you can `eject` at any time. This command will remove the single build dependency from your project.
+Clone Repo:
 
-Instead, it will copy all the configuration files and the transitive dependencies (webpack, Babel, ESLint, etc) right into your project so you have full control over them. All of the commands except `eject` will still work, but they will point to the copied scripts so you can tweak them. At this point you're on your own.
+```sh
+git clone https://github.com/SamarthGhante/Blockchain-Voting-System.git
+cd Blockchain-Voting-System
+```
 
-You don't have to ever use `eject`. The curated feature set is suitable for small and middle deployments, and you shouldn't feel obligated to use this feature. However we understand that this tool wouldn't be useful if you couldn't customize it when you are ready for it.
+Install Dependencies:
 
-## Learn More
+```sh
+npm install
+```
 
-You can learn more in the [Create React App documentation](https://facebook.github.io/create-react-app/docs/getting-started).
+Run The Application:
 
-To learn React, check out the [React documentation](https://reactjs.org/).
+```sh
+npm start
+```
+ Open `localhost:3000` to access the application!😎
 
-### Code Splitting
 
-This section has moved here: [https://facebook.github.io/create-react-app/docs/code-splitting](https://facebook.github.io/create-react-app/docs/code-splitting)
-
-### Analyzing the Bundle Size
-
-This section has moved here: [https://facebook.github.io/create-react-app/docs/analyzing-the-bundle-size](https://facebook.github.io/create-react-app/docs/analyzing-the-bundle-size)
-
-### Making a Progressive Web App
-
-This section has moved here: [https://facebook.github.io/create-react-app/docs/making-a-progressive-web-app](https://facebook.github.io/create-react-app/docs/making-a-progressive-web-app)
-
-### Advanced Configuration
-
-This section has moved here: [https://facebook.github.io/create-react-app/docs/advanced-configuration](https://facebook.github.io/create-react-app/docs/advanced-configuration)
-
-### Deployment
-
-This section has moved here: [https://facebook.github.io/create-react-app/docs/deployment](https://facebook.github.io/create-react-app/docs/deployment)
-
-### `npm run build` fails to minify
-
-This section has moved here: [https://facebook.github.io/create-react-app/docs/troubleshooting#npm-run-build-fails-to-minify](https://facebook.github.io/create-react-app/docs/troubleshooting#npm-run-build-fails-to-minify)
