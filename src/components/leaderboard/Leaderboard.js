@@ -1,7 +1,5 @@
-import Web3 from "web3";
 import { useState, useEffect } from "react";
 import './Leaderboard.css'; 
-import Vote from "../Vote/Vote.js";
 import CandidatesData from "../candidates/Candidatesdata.js";
 
 const Leaderboard = () => {
